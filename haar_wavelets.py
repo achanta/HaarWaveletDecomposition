@@ -4,6 +4,7 @@ returns a 2D array containing multi-resolution haar wavelet coefficients.
 The number of levels is a user-provided parameter.
 '''
 
+import numpy as np
 
 def haar_decomposition(image,levels=3):
 
