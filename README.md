@@ -7,7 +7,7 @@ This is a simple but efficient implementation of multi-resolution Haar Wavelet d
 python demo.py
 ```
 
-For a given input image, the output of the demo should be as shown in the second image:
+For a given input image, the output of the demo should be as shown in the second image. Please note the image mostly appears dark because the values are small and all negative values have been clipped to create an 8-bit image.
 
 <p float="center">
   <img src="./bee.png" width="400" />
