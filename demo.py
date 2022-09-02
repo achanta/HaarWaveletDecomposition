@@ -24,8 +24,9 @@ def main():
     inv = haar_inverse(hwt.copy(), LEVELS)  # backward transform
     end = timer()
 
-    Image.fromarray(hwt.clip(0,255).astype(np.uint8)).save("bee_wavelets_for.png")
-    Image.fromarray(inv.clip(0,255).astype(np.uint8)).save("bee_wavelets_inv.png")
+    Image.fromarray(hwt.clip(0,255).astype(np.uint8)).save("bee_wavelets_for.png") # save visualization
+    #Image.fromarray(inv.clip(0,255).astype(np.uint8)).save("bee_wavelets_inv.png") # save reconstructed image
+    
     print("Time taken in seconds for forward and inverse Haar wavelet transform:", end-start)
 
     
